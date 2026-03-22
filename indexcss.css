@@ -1,0 +1,410 @@
+/* css ni cho */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+	font-family: 'font1';
+	src:url('font1.ttf') format('truetype');
+	}
+@font-face{
+	font-family: 'font2';
+	src:url('font2.ttf') format('truetype');
+	}
+	@font-face{
+	font-family: 'font3';
+	src:url('font3.ttf') format('truetype');
+	}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bg3.png');
+}
+
+
+
+.container {
+    width: 1200px;
+    max-width: 2000px;
+    margin: 20px auto;
+}
+
+header {
+  background: #C7EABB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+
+#backbtn {
+  padding: 15px;
+  width: 110px; 
+  height: 60px;
+  border-radius: 10px;
+  background-color: #3E5F44;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+}
+
+#backbtn i {
+  transform: scale(2.5);
+  transform-origin: center;
+  display: inline-block;
+}
+#backbtn:hover{
+	color: #E8FFD7;
+}
+
+
+.music-link-btn {
+  padding: 15px;
+  width: 60px
+  height: 60px;
+  border-radius: 10px;
+  background-color: #3E5F44;
+  color: white; 
+  cursor: pointer;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-right: 10px; 
+  margin-left: auto; 
+}
+
+.music-link-btn i {
+  transform: scale(2.5); 
+  transform-origin: center;
+  color: inherit;
+}
+
+header {
+  background: #C7EABB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+
+#backbtn {
+  padding: 15px;
+  width: 60px; 
+  height: 60px;
+  border-radius: 10px;
+  background-color: #3E5F44;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#backbtn i {
+  transform: scale(2.5); 
+  transform-origin: center;
+}
+
+
+header h1 {
+  font-size: 40px;
+  font-family: 'font1';
+  color: #3E5F44;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #A2CB8B;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.custitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	font-family: 'font2';
+	
+}
+
+.custitle button{
+	background-color: #f2f2f2;
+	border-style: none;
+	cursor: pointer;
+	margin-top: 10px;
+	 margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+	border-radius:5px;
+	color: #002E5D;
+	
+}
+.custitle button:hover{
+	color:white;
+	background-color: #5E936C;
+	transition: .5;
+}
+
+.titlecustom{
+    height: 40px;
+    min-width: 200px;
+    max-width: 500px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: auto;
+}
+
+.stats-info {
+    display: flex;
+    gap: 70px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+	
+}
+.editor {
+    flex: 2;
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+	margin-bottom: 50px;
+	background: #3E5F44;
+}
+textarea {
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+    padding: 10px;
+    resize: vertical;
+	font-size:20px;
+	background: #E8FFD7;
+	font-family:'font3';
+}
+
+
+.moodbutton{
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	color: white;
+	
+}
+.moodbutton p{
+	margin-right: 5px;
+	
+}
+.mood-btn{
+	gap:5px;
+	margin:0px 5px;
+}
+
+.moods button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+	border-radius:5px;
+}
+
+.moods button.active {
+    background-color: #5E936C;
+    color: white;
+}
+.moods button:hover {
+    background-color: #5E936C;
+    color: white;
+}
+
+
+
+.buttons{
+	display: flex;
+	align-items: center;
+}
+.greetings{
+	display: flex;
+	align-items:center;
+    margin-left:auto;
+	color: #E8FFD7;
+	font-family: 'font3';
+}
+
+
+
+.buttons button {
+    padding: 8px 12px;
+    cursor: pointer;
+	margin-right:10px;
+	border-radius:5px;	 
+	background-color:white;
+	transition-duration: 0.4s;
+}
+.buttons button:hover{
+	color:white;
+	background-color: #5E936C;
+}
+
+
+
+.entries {
+    flex: 1;
+    background: #A2CB8B;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+	background-color:#A2CB8B;
+	
+}
+
+.entry-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.entry-item:hover {
+    background-color: #5E936C;
+}
+
+.custom-mood {
+    margin-top: 10px;
+	display:flex;
+}
+
+.custom-mood input[type="text"] {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.moodfont{
+	color: black;
+	font-style: italic;
+	font-weight:bold;
+	font-size:14px;
+	margin-top:5px;
+}
+
+
+.entry-item.selected {
+    background-color: #D3D3D3;
+    border-left: 4px solid #5E936C;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+/* spotify part */
+.spotify{
+	margin:20px auto;
+	padding:20px;
+	height:1200px;
+	width:1200px;
+	background: rgba(84, 139, 84, 0.3);
+	border-radius:10px;
+	
+	
+}
+.spotify h1{
+	color:white;
+	margin-top:50px;
+	font-family:'font1';
+}
+
+.playlist1{
+	margin:20px 0px;
+	width:100%;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	gap:15px;
+}
+.playlist2{
+	margin:20px 0px;
+	width:100%;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;	
+	gap:15px;
+}
+
+.con2spot{
+	align-content:center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	
+}
+.con2spot h1{
+	font-family:'font1';
+	color: white;
+}
+
+@media (max-width: 360px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .logoutbtn {
+        margin-right: 0;
+    }
+    .titlecustom {
+        min-width: 150px;
+        font-size: 1.1rem;
+    }
+    textarea {
+        height: 150px;
+    }
+    .entries {
+        max-height: 300px;
+    }
+    .spotify h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        width: 500px;
+        margin-top: 50px;
+    }
+	.container{
+		
+	}
+	.con2spot{
+		
+	}
+}

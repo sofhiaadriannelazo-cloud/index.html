@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title> PC </title>
+		<link rel="stylesheet" href="planes.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class = "nav-links">
+            <a href="index.html" class="home-link"><i class="fas fa-home"></i></a>
+        </div>
+    </nav>
+
+    <section class = "hero">
+        <h1> Let BAL's voyage guide you to the scenes of the Philippines</h1>
+        <p> Book your flight to the world's most beautiful islands. </p>
+
+        <div class = "booking-box">
+            <div class = "input-group">
+                <label> From </label>
+                <input type = "text" id = "fromCity" placeholder = "Manila (MNL)" value = "Manila">
+            </div>
+            <div class = "input-group">
+                <label> To (Destination) </label>
+                <select id = "toCity">
+                    <option value = "Palawan"> Palawan </option>
+                    <option value = "Boracay"> Boracay </option>
+                    <option value = "Cebu"> Cebu </option>
+                    <option value = "Siargao"> Siargao </option>
+                    <option value = "Davao"> Davao </option>
+					<option value = "Mindoro"> Mindoro </option>
+					
+                </select>
+            </div>
+            <div class = "input-group">
+                <label> Departure Date </label>
+                <input type = "date" id = "date">
+            </div>
+			
+            <button class = "search-btn" id = "searchBtn"> Search Flights </button>
+        </div>
+
+        <div id="result-area">
+
+        </div>
+    </section>
+
+<script>
+	const currentUser = localStorage.getItem("loggedUser");
+
+	if (!currentUser) {
+    window.location.href = "login.html";
+	}
+	
+    const dateInput = document.getElementById('date');
+    dateInput.valueAsDate = new Date();
+
+    const searchBtn = document.getElementById('searchBtn');
+    const resultArea = document.getElementById('result-area');
+    const fromCity = document.getElementById('fromCity');
+    const toCity = document.getElementById('toCity');
+    const dateVal = document.getElementById('date');
+
+    searchBtn.addEventListener('click', function() {
+
+
+        if(fromCity.value === "") {
+            alert("This page says: Please enter departure city");
+            return;
+        }
+
+        const originalText = searchBtn.innerText;
+        searchBtn.innerText = "Searching...";
+        searchBtn.style.backgroundColor = "#7f8c8d";
+
+        setTimeout(() => {
+
+
+            searchBtn.innerText = originalText;
+            searchBtn.style.backgroundColor = "rgb(174, 183, 132, .8)";
+
+            const destination = toCity.options[toCity.selectedIndex].text;
+            const date = new Date(dateVal.value).toLocaleDateString();
+
+            alert(
+                "Flight Details!\n\n" +
+                "From: " + fromCity.value + "\n" +
+                "To: " + destination + "\n" +
+                "Date: " + date + "\n\n" +
+                "Enjoy your flight, have a nice day!"
+            );
+			
+			document.getElementById('date').valueAsDate = new Date();
+				
+        }, 2000); 
+
+    });
+	
+	</script>
+</body>
+</html>

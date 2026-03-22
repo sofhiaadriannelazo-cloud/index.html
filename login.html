@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="logincss.css">
+</head>
+<body>
+
+
+<div class="logcon">
+    <button class="exitlog" id="exitlog">&#10006</button>
+
+    <h2 id="formTitle">Login</h2>
+
+    <input id="email" class="username" placeholder="Username">
+    <div class="passcon">
+    <input id="password" type="password" placeholder="Password" class="passinp">
+    <button class="show" type="button" id="togglePassword"><i class="fa-solid fa-eye-slash"></i></button>
+    </div>
+    <button onclick="handleAuth()" id="authBtn" class="loginbtn">Login</button>
+
+
+    <p id="toggleText">
+        No account? <a href="#" onclick="toggleMode()">Sign up</a>
+    </p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

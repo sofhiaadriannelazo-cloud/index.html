@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> bals </title>
+		<link rel="stylesheet" href="finals.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.flaticon.com/free-icons/facebook">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+
+<body>
+
+<header> 
+		<ul class = "navbar"> 
+			<li> <a href = "#home" > Home </a> </li> 
+			<li> <a href = "#pack" > Package </a> </li> 
+			<li> <a href = "#desti" > Destination </a> </li> 
+			<button id = "loginbtn"> Log In </button>
+			<button id = "logoutbtn"> Log Out </button>
+	            
+			
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">More</a> <!-- This is the button text -->
+            <div class="dropdown-content">
+				<a href="#us">About us</a>
+				<a href="#contact"> Contact </a>
+            </div>
+        </li>
+			
+			<!-- eto ung code pag may naka log in na-->
+			<div id="userIcon" style="display: none;">
+				<i class="fa-solid fa-user" style="font-size:24px;"> </i>
+				<span id="userEmailDisplay" style="font-weight: bold; font-family: sans-serif;"> </span>
+			</div>
+		
+			<!-- eto ung code pag wala pang naka log in-->
+			<div id="guestIcon" style="display: none;">
+				<i class="fa-regular fa-user" style="font-size:24px;"></i>
+			</div>
+	
+			
+		</ul>
+
+</header>
+
+<section class = "home" id = "home">
+
+	<div class = "home-text">
+
+		<h1> Bals Voyage </h1>
+			<p> Visit some island and extend some customer <br> genuine service with us! </p>
+	</div>
+</section>
+
+<div class="btn-container">
+    <a href="#heh" class="explore-btn"> Explore Now! </a>
+</div>
+
+<div class = "omai">
+<section class = "container" ID = "heh">
+
+	<div class = "text">
+		<center> <h2> Start your vacation with genuine service! </h2> <center>
+	</div>
+		
+	<div class = "row-items">
+
+		<div class = "container-box">
+			<a href="plane.html">
+				<div class = "container-img">
+					<img src="ap.jpg" alt = "Sample Image" width = "200" height = "200">
+				</div>
+				
+				<h4> Plane Cruises </h4>
+				
+			</a>
+		</div>
+
+		<div class = "container-box">
+			<div class = "container-img">
+			<a href="musttry.html">
+				<img src="oni.jpg" alt = "Sample Image" width = "300" height = "200">
+			</div>
+
+			<h4> Foodie </h4>
+		
+			</a>
+		</div>
+
+		<div class = "container-box">
+			<div class = "container-img">
+				<a href="rest.html">
+				<img src="sum.jpg" alt = "Sample Image" width = "200" height = "200">
+			</div>
+
+				<h4> Summer Rest </h4>
+				
+				</a>
+		</div>
+
+		<div class = "container-box">
+			<div class = "container-img">
+			<a href = "journal.html" id="journalbtn">
+				<img src = "mon.png" alt = "Sample Image" width = "200" height = "200">
+			</div>
+
+			<h4> Journal </h4>
+
+			</a>
+		</div>
+	</div>
+</section>
+</div>
+
+<section class="package" id="pack">
+    <div class="title">
+        <h2> Our famous tour package </h2>
+    </div>
+
+    <!-- Container with horizontal scroll -->
+    <div class="package-scroll-container">
+        <div class="package-content">
+		
+            <div class="box">
+                <div class = "thum">
+                    <img src = "palawan.jpg" alt="Palawan Tour Package" width="300" height="200">
+                    <h3>₱ 13,856</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Palawan</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="bohol.jpg" alt="Bohol Tour Package" width="300" height="200">
+                    <h3>₱ 13,856</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4 class = "two">Bohol</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="boracay.jpg" alt="Boracay Tour Package" width="300" height="200">
+                    <h3>₱ 10,999</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Boracay</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="cebu.jpg" alt="Cebu Tour Package" width="300" height="200">
+                    <h3>₱ 2,500</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Cebu</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="antipolo.jpg" alt="Antipolo Tour Package" width="300" height="200">
+                    <h3>₱ 2,500</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Antipolo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="baguio.jpg" alt="Baguio Tour Package" width="300" height="200">
+                    <h3>₱ 1,200</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Baguio</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="tagaytay.jpg" alt="Tagaytay Tour Package" width="300" height="200">
+                    <h3>₱ 1,500</h3>
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Tagaytay</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="pangasinan.jpg" alt="Pangasinan Tour Package" width="300" height="200">
+                    <h3>₱ 2,980</h3> <!-- Fixed space in price -->
+                </div>
+                <div class="dest-content">
+                    <div class="location">
+                        <h4>Pangasinan</h4>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+    </div>
+</section>
+
+<div class="section-divider">
+  <div class="line-segment"></div>
+</div>
+
+<h1 class = "section-title" id="desti"> Our most popular tour destination </h1>
+   <section class="destination outset" id="desti">
+ 
+    <div class="main-display">
+	
+        <!-- Default Featured Image (First Destination) -->
+        <div class="featured-item" id="default">
+            <img src="el nido.jpg" alt="Hidden Lagoon in El Nido, Palawan" class="featured-img">
+            <div class="featured-title">Hidden Lagoon, El Nido. Palawan</div>
+        </div>
+
+        <!-- Enlarged Items (Hidden by Default, Shown on Target) -->
+		
+		<!-- Palawan -->
+        <div class="featured-item" id="el-nido">
+            <img src="el nido.jpg" alt="Hidden Lagoon in El Nido, Palawan" class="featured-img">
+            <div class="featured-title">Hidden Lagoon, El Nido. Palawan</div>
+        </div>
+		
+        <div class="featured-item" id="caron">
+            <img src="caron.jpg" alt="Caron Beach in Palawan" class="featured-img">
+            <div class="featured-title">Caron. Palawan</div>
+        </div>
+		
+        <div class="featured-item" id="vicente">
+            <img src="vicente.jpg" alt="Long Beach in San Vicente, Palawan" class="featured-img">
+            <div class="featured-title">Long Beach, San Vicente. Palawan</div>
+        </div>
+		
+		<!-- bohol -->
+        <div class="featured-item" id="alona">
+            <img src="alona.jpg" alt="Alona Beach on Panglao Island, Bohol" class="featured-img">
+            <div class="featured-title">Alona Beach Panglao Island. Bohol</div>
+        </div>
+		
+        <div class="featured-item" id="momo">
+            <img src="momo.jpg" alt="Momo Beach in Anda, Bohol" class="featured-img">
+            <div class="featured-title">Momo Beach, Anda. Bohol</div>
+        </div>
+		
+        <div class="featured-item" id="dumaluan">
+            <img src="dumaluan.jpg" alt="Dumaluan Beach on Panglao Island, Bohol" class="featured-img">
+            <div class="featured-title">Dumaluan Beach, Panglao Island. Bohol</div>
+        </div>
+		
+		<!-- Boracay -->
+		<div class="featured-item" id="puti">
+            <img src="puti.jpg" alt="White beach Beach in Boracay" class="featured-img">
+            <div class="featured-title">White Beach. Boracay</div>
+        </div>
+		
+        <div class="featured-item" id="puka">
+            <img src="puka.jpg" alt="Puka Shell Beach in Boracay" class="featured-img">
+            <div class="featured-title">Puka Shell Beach. Boracay</div>
+        </div>
+		
+        <div class="featured-item" id="diniwid">
+            <img src="diniwid.jpg" alt="Diniwid Beach in Boracay" class="featured-img">
+            <div class="featured-title">Diniwid Beach. Boracay</div>
+        </div>
+		
+		<!-- cebu -->
+        <div class="featured-item" id="kawalasan">
+            <img src="kawalasan.jpg" alt="Kawasan Falls & Beach in Moalboal, Cebu" class="featured-img">
+            <div class="featured-title">Kawasan Falls & Beach, Moalboal. Cebu</div>
+        </div>
+		
+        <div class="featured-item" id="sumilon">
+            <img src="sumilon.jpg" alt="Sumilon Island Beach in Cebu" class="featured-img">
+            <div class="featured-title">Sumilon Island Beach. Cebu</div>
+        </div>
+		
+        <div class="featured-item" id="mactan">
+            <img src="mactan.jpg" alt="Mactan Island in Cebu" class="featured-img">
+            <div class="featured-title">Mactan Island. Cebu</div>
+        </div>
+		
+		<!-- antipolo -->
+        <div class="featured-item" id="taktak">
+            <img src="taktak.jpg" alt="Hinulugang Taktak in Antipolo" class="featured-img">
+            <div class="featured-title">Hinulugang Taktak. Antipolo</div>
+        </div>
+		
+        <div class="featured-item" id="pinto">
+            <img src="pinto.jpg" alt="Pinto Art Museum in Antipolo" class="featured-img">
+            <div class="featured-title">Pinto Art Museum. Antipolo</div>
+        </div>
+		
+        <div class="featured-item" id="wander">
+            <img src="wander.jpg" alt="Wander Wisdom in Antipolo" class="featured-img">
+            <div class="featured-title">Wander Wisdom. Antipolo</div>
+        </div>
+		
+		<!-- baguio -->
+        <div class="featured-item" id="burnham">
+            <img src="burnham.jpg" alt="Burnham Park in Baguio" class="featured-img">
+            <div class="featured-title">Burnham Park. Baguio</div>
+        </div>
+		
+        <div class="featured-item" id="view">
+            <img src="view.jpg" alt="Mines View in Baguio" class="featured-img">
+            <div class="featured-title">Mines View. Baguio</div>
+        </div>
+		
+        <div class="featured-item" id="cath">
+            <img src="cath.jpg" alt="Baguio Cathedral" class="featured-img">
+            <div class="featured-title">Baguio Cathedral</div>
+        </div>
+		
+		<!-- tagaytay -->
+        <div class="featured-item" id="taas">
+            <img src="taas.jpg" alt="Taal Volcano and Lake in Tagaytay" class="featured-img">
+            <div class="featured-title">Taal Volcano and Lake. Tagaytay</div>
+        </div>
+		
+        <div class="featured-item" id="sky">
+            <img src="sky.jpg" alt="Sky Ranch in Tagaytay" class="featured-img">
+            <div class="featured-title">Sky Ranch. Tagaytay</div>
+        </div>
+		
+        <div class="featured-item" id="peps">
+            <img src="peps.jpg" alt="People’s Park in the Sky in Tagaytay" class="featured-img">
+            <div class="featured-title">People’s Park in the Sky. Tagaytay</div>
+        </div>
+		
+			<!-- Pangasinan -->
+		<div class="featured-item" id="island">
+            <img src="island.jpg" alt="Hundred Islands National Park in Pangasinan" class="featured-img">
+            <div class="featured-title">Hundred Islands National Park. Pangasinan</div>
+        </div>
+		
+        <div class="featured-item" id="falls">
+            <img src="falls.jpg" alt="Bolinao Falls in Pangasinan" class="featured-img">
+            <div class="featured-title">Bolinao Falls. Pangasinan</div>
+        </div>
+		
+		<div class="featured-item" id="piste">
+            <img src="piste.jpg" alt="Patar White Beach in Pangasinan" class="featured-img">
+            <div class="featured-title"> Patar White Beach. Pangasinan</div>
+        </div>
+		
+    </div>
+
+    <!-- Horizontal Scrollable Thumbnail Row -->
+    <div class="thumbnail-scroll">
+        <div class="thumbnail-grid">
+            <!-- Palawan -->
+            <a href="#el-nido" class="thumbnail-card">
+                <img src="el nido.jpg" alt="Hidden Lagoon in El Nido, Palawan">
+            </a>
+			
+            <a href="#caron" class="thumbnail-card">
+                <img src="caron.jpg" alt="Caron Beach in Palawan">
+            </a>
+			
+            <a href="#vicente" class="thumbnail-card">
+                <img src="vicente.jpg" alt="Long Beach in San Vicente, Palawan">
+            </a>
+
+            <!-- Bohol -->
+            <a href="#alona" class="thumbnail-card">
+                <img src="alona.jpg" alt="Alona Beach on Panglao Island, Bohol">
+            </a>
+			
+            <a href="#momo" class="thumbnail-card">
+                <img src="momo.jpg" alt="Momo Beach in Anda, Bohol">
+            </a>
+			
+            <a href="#dumaluan" class="thumbnail-card">
+                <img src="dumaluan.jpg" alt="Dumaluan Beach on Panglao Island, Bohosl">
+            </a>
+
+            <!-- Boracay -->
+			<a href="#puti" class="thumbnail-card">
+                <img src="puti.jpg" alt="White Beach in Boracay">
+            </a>
+			
+            <a href="#puka" class="thumbnail-card">
+                <img src="puka.jpg" alt="Puka Shell Beach in Boracay">
+            </a>
+			
+            <a href="#diniwid" class="thumbnail-card">
+                <img src="diniwid.jpg" alt="Diniwid Beach in Boracay">
+            </a>
+
+            <!-- Cebu -->
+            <a href="#kawalasan" class="thumbnail-card">
+                <img src="kawalasan.jpg" alt="Kawasan Falls & Beach in Moalboal, Cebu">
+            </a>
+			
+            <a href="#sumilon" class="thumbnail-card">
+                <img src="sumilon.jpg" alt="Sumilon Island Beach in Cebu">
+            </a>
+			
+            <a href="#mactan" class="thumbnail-card">
+                <img src="mactan.jpg" alt="Mactan Island in Cebu">
+            </a>
+
+            <!-- Antipolo -->
+            <a href="#taktak" class="thumbnail-card">
+                <img src="taktak.jpg" alt="Hinulugang Taktak in Antipolo">
+            </a>
+			
+            <a href="#pinto" class="thumbnail-card">
+                <img src="pinto.jpg" alt="Pinto Art Museum in Antipolo">
+            </a>
+			
+            <a href="#wander" class="thumbnail-card">
+                <img src="wander.jpg" alt="Wander Wisdom in Antipolo">
+            </a>
+
+            <!-- Baguio -->
+            <a href="#burnham" class="thumbnail-card">
+                <img src="burnham.jpg" alt="Burnham Park in Baguio">
+            </a>
+			
+            <a href="#view" class="thumbnail-card">
+                <img src="view.jpg" alt="Mines View in Baguio">
+            </a>
+			
+            <a href="#cath" class="thumbnail-card">
+                <img src="cath.jpg" alt="Baguio Cathedral">
+            </a>
+
+            <!-- Tagaytay -->
+            <a href="#taas" class="thumbnail-card">
+                <img src="taas.jpg" alt="Taal Volcano and Lake in Tagaytay">
+            </a>
+			
+            <a href="#sky" class="thumbnail-card">
+                <img src="sky.jpg" alt="Sky Ranch in Tagaytay">
+            </a>
+			
+            <a href="#peps" class="thumbnail-card">
+                <img src="peps.jpg" alt="People’s Park in the Sky in Tagaytay">
+            </a>
+
+            <!-- Pangasinan -->
+            <a href="#island" class="thumbnail-card">
+                <img src="island.jpg" alt="Hundred Islands National Park in Pangasinan">
+            </a>
+			
+            <a href="#falls" class="thumbnail-card">
+                <img src="falls.jpg" alt="Bolinao Falls in Pangasinan">
+            </a>
+			
+			<a href="#piste" class="thumbnail-card">
+				<img src="piste.jpg" alt="Bolinao Falls in Pangasinan">
+            </a>
+			
+        </div>
+		
+    </div>
+</section>
+
+<section class="about-us" id="us">
+		<div class="title">
+			<h2>About Us</h2>
+		</div>
+		
+		<div class="container">
+			<div class="about-us-story-box">
+				<div class="container-box">
+					<h4> Website </h4>
+					<p>Bals Voyage was founded with a passion for travel and a commitment to providing genuine service. We aim to help our customers discover the beauty scene of the world and create unforgettable memories.</p>
+				</div>
+			</div>
+
+			<div class="about-us-bottom-row">
+				<div class="container-box">
+					<h4> Mission </h4>
+					<p>To inspire and facilitate meaningful travel experiences by offering personalized service, curated packages, and a deep understanding of our clients' desires.</p>
+				</div>
+			
+				<div class="container-box">
+					<h4> Values </h4>
+					<p>We believe in integrity, customer satisfaction, and a passion for exploration. Every journey with Bals Voyage is built on trust and a dedication to excellence.</p>
+				</div>
+			</div>
+		</div>
+</section>
+
+<footer class="writewayfoot" id ="contact">
+		<div class="footer-container">
+			<div class="footer-brand">
+				<h2>BALs Voyage</h2>
+				<p>Travel, Taste, Track.</p>
+			</div>
+
+			<div class="footer-links">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="#sci">Blog</a></li>
+					<li><a href="#use">About Us</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-social">
+				<h3>Contact Us</h3>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/maninafatima.villarbolocon" target="_blank" aria-label="Facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				
+					<a href="https://www.facebook.com/johncarlo.abande.79" target="_blank" aria-label="Facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				
+					<a href="https://www.facebook.com/sofhiaadrianne.lazo" target="_blank" aria-label="Facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-copyright">
+			<p>&copy; 2026 BALs Voyage. All rights reserved.</p>
+		</div>
+</footer>
+
+<script src="script.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+@font-face{
+    font-family: 'font1';
+    src:url('font1.ttf') format('truetype');
+    }
+@font-face{
+    font-family: 'font2';
+    src:url('font2.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'font3';
+    src:url('font 3.ttf') format('truetype');
+}
+
+html{
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('bgihi.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+.logcon{
+    margin:0px auto;
+    margin-top:30px;
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px; 
+    background: rgb(132, 177, 121,.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position:relative;
+    border-radius:10px;
+    border: groove 2px silver;
+	
+}
+
+.logcon p{
+    margin: 10px;
+    color:white;
+}
+.logcon a{
+	 color:#A2CB8B;
+}
+.logcon h2{
+    margin-bottom: 25px;
+    margin-top: 100px;
+    font-size: 4rem;
+    font-family:'font3';
+	color: white;
+}
+
+.passcon{
+    position: relative;
+    display:flex;
+    width: 80%; 
+    margin: 10px 0;
+    align-items: center;
+	
+}
+
+
+.username{
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius:3px;
+    font-size:.8rem;
+	
+}
+.passinp{
+    width: 88%;
+    padding: 12px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border-radius:3px;
+    font-size:.8rem;
+}
+
+.loginbtn{
+    padding: 15px 40px;
+    margin-top:40px;
+    margin-bottom:10px;
+    cursor: pointer;
+    background-color: #A2CB8B;
+    border-radius:5px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+	font-weight: bold;
+}
+
+.loginbtn:hover{
+    background-color: #84B179;
+    color:white;
+}
+
+.show{
+    padding:0px;
+    margin-left:5px;
+    width:47px;
+    font-size:13px;
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+.fa-solid{
+    font-size:25px;
+    color:#A2CB8B;
+}
+
+.loginbtn{
+    padding: 15px 40px;
+    margin-top:40px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+.exitlog{
+    position:absolute;
+    left:10px;
+    top:10px;
+    padding: 15px 21px;
+    cursor: pointer;
+    background-color:transparent;
+    font-family:'font1';
+    font-size: 20px;
+    font-weight:bold;
+    color:white;
+    transition-duration: 0.4s;
+	border: none;
+	
+}
+.exitlog:hover{
+    color:#A7C6ED;
+}
+
+
+@media (max-width: 360px) {
+    .logcon h2 {
+        font-size: 2.2rem;
+        margin-top: 50px;
+    }
+
+    .logcon {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .passcon {
+        width: 90%;
+    }
+
+    .exitlog {
+        left: 5px;
+        top: 5px;
+        padding: 10px 15px;
+    }
+
+    .loginbtn {
+        padding: 10px 25px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logcon {
+        width: 500px;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JOURNAL</title>
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+	 <h1>BV Journal</h1>
+       <a href="#pots" class="music-link-btn"> 
+    <i class="fa fa-music" aria-hidden="true"></i>
+  </a>
+  <button id="backbtn">
+    <i class="fa fa-home" aria-hidden="true"></i>
+  </button>
+    </header>
+
+    <!-- STATS -->
+    <div class="stats">
+		<div class="custitle"> 
+		<input class="titlecustom" type="text" id="titleInput" placeholder="Enter your title">
+		<button class="titlecustombtn" id="saveBtn">Save</button>
+		<button class="titlecustombtn" id="editBtn" style="display:none;">Edit</button>
+		</div>
+		
+	<div class="stats-info">
+        <div>
+            <h3 id="totalEntries">0</h3>
+            <p>Total Entries</p>
+        </div>
+
+        <div>
+            <h3 id="currentStreak">0</h3>
+            <p>Day Streak</p>
+        </div>
+
+        <div>
+            <h3 id="totalWords">0</h3>
+            <p>Total Words</p>
+        </div>
+		</div>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <div class="main">
+
+        <!-- LEFT: WRITING AREA -->
+        <div class="editor">
+
+            <p id="currentDate"></p>
+
+            <div class="moods">
+				<div class="moodbutton">
+				<p>SELECT YOUR MOOD:</p>
+                <button class="mood-btn" onclick="selectMood(this,'Feeling Happy')">Happy</button>
+                <button class="mood-btn" onclick="selectMood(this,'Feeling Sad')">Sad</button>
+                <button class="mood-btn" onclick="selectMood(this,'Feeling Anxious')">Anxious</button>
+                <button class="mood-btn" onclick="selectMood(this,'Feeling Angry')">Angry</button>
+				<button class="mood-btn" onclick="selectMood(this,'Feeling Scared')">Scared</button>
+                <button class="mood-btn" onclick="selectMood(this,'Feeling Surprised')">Surprised</button>
+				</div>
+				
+			<div class="custom-mood">
+			<input type="checkbox" id="customMoodCheck">
+			<input type="text" id="customMoodInput" placeholder="Custom Mood" disabled>
+			
+			</div>
+				
+            </div>
+
+            <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
+
+            <div class="buttons">
+					<div class="enbtn">
+						<button onclick="showNewEntry()">Refresh</button>
+						<button onclick="saveEntry()">Save Entry</button>
+						<button onclick="deleteEntry()">Delete Entry</button>
+					</div>	
+				<div class="greetings">
+				<h2 id="greeting"></h2>
+				</div>
+            </div>
+
+        </div>
+
+        <!-- SAVED ENTRIES -->
+        <div class="entries">
+            <h3>Saved Entries</h3>
+            <div id="entriesList"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<section id = "pots">
+<div class="con2spot">
+<h1>SET THE TONE WITH MUSIC</h1>
+<div class="spotify">
+	<div class="playlist1">
+		<iframe data-testid="embed-iframe" style="border-radius:12px" 
+		src="https://open.spotify.com/embed/playlist/2piEdJk8fTIEgFDu5iHIWX?utm_source=generator" 
+		width="48%" height="460" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+		picture-in-picture" loading="lazy"></iframe>
+		<iframe data-testid="embed-iframe" style="border-radius:12px" 
+	src="https://open.spotify.com/embed/playlist/3bwbrwHm1HUro6n6V5MFFo?utm_source=generator" 
+	width="48%" height="460" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; 
+	encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		
+	</div >
+	<div class="playlist2">
+		<iframe data-testid="embed-iframe" style="border-radius:12px" 
+		src="https://open.spotify.com/embed/playlist/2AR8hmEjn6K4wYUwKPmflW?utm_source=generator" 
+		width="48%" height="460" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+		picture-in-picture" loading="lazy"></iframe>
+		<iframe data-testid="embed-iframe" style="border-radius:12px" 
+		src="https://open.spotify.com/embed/playlist/5ONmxlWbKM02k0fzY1mNBC?utm_source=generator" 
+		width="48%" height="460" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+		picture-in-picture" loading="lazy"></iframe>
+	</div>
+	<h1> “A journal can offer you a place to be someone, anyone, who you want to be.”</h1>
+</div>
+</div>
+</section>
+<script src="journaljs.js"></script>
+</body>
+</html>
