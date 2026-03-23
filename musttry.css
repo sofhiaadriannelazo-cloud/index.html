@@ -45,7 +45,7 @@ header {
 .main-section {
     width: 100%;
     height: 750px;
-    background: url('images/main.jpg') center/cover no-repeat;
+    background: url('main.jpg') center/cover no-repeat;
     position: relative;
 }
 
